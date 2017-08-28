@@ -8,9 +8,11 @@ body {
 
 .heart {
 	position: relative;
+	display: inline-block;
 	width: 300px;
 	height: 280px;
-	margin: 100px auto;
+	margin: 0 100px;
+	top: -120px;
 }
 
 .heart::before,
@@ -56,7 +58,7 @@ body {
 	font-weight: bold;
 	color: #FF6666;
 	text-shadow: -1px -1px 1px #ae6363, 1px 1px 1px #450000;
-	padding: 50px 0 0 5px;
+	padding: 50px 0px 10px 20px;
 	-webkit-transform: rotate(-15deg);
 	-moz-transform: rotate(-15deg);
 	-o-transform: rotate(-15deg);
@@ -64,4 +66,19 @@ body {
 }
 .message:fisrt-child {
 	text-indent: 1em;
+}
+.imgs{
+	position: relative;
+	margin-top: 120px;
+	display: inline-block;
+}
+.imgs img{
+	height: 300px;
+	width: auto;
+	display: inline-block;
+	border-radius: 6px;
+}
+.imgs p{
+	color: white;
+	text-align: center;
 }
