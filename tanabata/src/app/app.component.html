@@ -1,0 +1,30 @@
+<div class="container-fluid main-body">
+  <div class="row ">
+    <div class="col-sm-3 text-center">
+      <div class="heart">
+        <p class="message">
+          You're soul
+          <br>to my Life
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-9 ">
+      <!--<div class="imgs">-->
+      <!--<img src="http://ofn9ip9vx.bkt.clouddn.com/IMG_0008.JPG">-->
+      <!--<img src="http://ofn9ip9vx.bkt.clouddn.com/IMG_1012.JPG">-->
+      <!--<img src="http://ofn9ip9vx.bkt.clouddn.com/IMG_1246.JPG">-->
+      <!--<p>28/8/2017 qixi festival.</p>-->
+      <!--</div>-->
+      <div class="top-nav">
+        <ul class="nav nav-pills nav-justified">
+          <li role="presentation" *ngFor="let page of pages"
+              (click)="isActive(page['name'])"
+              [ngClass]="{'active':page['active']}">
+            <a [routerLink]="page['link']">{{page['name'] | uppercase}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

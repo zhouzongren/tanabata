@@ -1,0 +1,26 @@
+.main-body{
+  min-height: 600px;
+  background-color: skyblue;
+  display: flex;
+  display: -webkit-flex;
+}
+.row{
+  align-self: center;
+  height:400px;
+  width: 100%;
+  text-align: center;
+}
+.row img{
+  height: 300px;
+  width: auto;
+  border-radius: 6px;
+}
+.flower{
+ color: crimson;
+}
+.peanut{
+  color: black;
+}
+.me{
+  color: white;
+}

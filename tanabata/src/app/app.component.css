@@ -1,18 +1,20 @@
 /**
  * Так тебя лююлю что готова учить CSS
- * @valentina 
+ * @valentina
 */
-body {
+.main-body {
 	background: #FF6666;
+  height: 100%;
+  width: 100%;
 }
 
 .heart {
 	position: relative;
 	display: inline-block;
-	width: 300px;
-	height: 280px;
-	margin: 0 100px;
-	top: -120px;
+	width: 100px;
+	height: 115px;
+	margin: 0 0;
+  z-index: 1;
 }
 
 .heart::before,
@@ -22,54 +24,50 @@ body {
 	position: absolute;
 	top: 0;
 	background-color: #CC0033;
-	width: 150px;
-	height: 240px;
+	width: 63px;
+	height: 100px;
 	border-radius: 75px 75px 0 0;
 }
 
 .heart::before {
-	left: 0px;
+	left: 0;
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	background-color: #cf9797;
 	box-shadow: -10px 1px 15px 0 rgba(0,0,0,0.2),
-		inset 20px -195px 65px 0 #CC0033, 
-		inset -2px 2px 0 rgba(255,255,255,.75), 
-		inset -5px 20px 0px rgba(255,255,255,.35), 
-		inset -5px 20px 10px rgba(255,255,255,.25);		
+		inset 20px -195px 65px 0 #CC0033,
+		inset -2px 2px 0 rgba(255,255,255,.75),
+		inset -5px 20px 0px rgba(255,255,255,.35),
+		inset -5px 20px 10px rgba(255,255,255,.25);
 }
 .heart::after {
-	left: 64px;
+	left: 26px;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
-	box-shadow: 
-		15px 3px 25px rgba(0,0,0,0.35),
-		inset -25px 10px 35px rgba(0,0,0,.35);
-		
+	box-shadow:
+		10px 2px 15px rgba(0,0,0,0.35),
+		inset -15px 7px 22px rgba(0,0,0,.35);
+
 }
 
 .message {
-	font-family: 'Ovo';
-	font-size: 36px;
+	font-family: 'Ovo', sans-serif;
+	font-size: 16px;
 	font-weight: bold;
 	color: #FF6666;
 	text-shadow: -1px -1px 1px #ae6363, 1px 1px 1px #450000;
-	padding: 50px 0px 10px 20px;
+	padding: 20px 0 0px 0px;
 	-webkit-transform: rotate(-15deg);
 	-moz-transform: rotate(-15deg);
 	-o-transform: rotate(-15deg);
 	transform: rotate(-15deg);
 }
-.message:fisrt-child {
-	text-indent: 1em;
-}
 .imgs{
 	position: relative;
-	margin-top: 120px;
 	display: inline-block;
 }
 .imgs img{
@@ -81,4 +79,22 @@ body {
 .imgs p{
 	color: white;
 	text-align: center;
+}
+
+.top-nav{
+  display: flex;
+  height: 115px;
+  display: -webkit-flex; /* Safari */
+  align-items: center;
+  font-size: large;
+}
+.top-nav ul{
+  align-self:center;
+}
+.nav-pills>li>a:active, .nav-pills>li>a:focus, .nav-pills>li>a:hover,  .nav-pills>li.active>a{
+  background-color: hotpink;
+  color: white;
+}
+.nav-pills>li>a{
+  color: white;
 }
